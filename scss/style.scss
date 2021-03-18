@@ -1,3 +1,16 @@
 @import 'defaults';
 @import 'utils';
 @import 'welcome-page';
+
+:root {
+  @media screen and (min-height: 1500px) {
+    font-size: 32px;
+  }
+
+  @media screen and (max-width: 550px) {
+    font-size: 14px;
+  }
+  @media screen and (max-width: 395px) {
+    font-size: 11px;
+  }
+}

@@ -6,6 +6,7 @@
 
   &__title {
     font: $font-main;
+    color: $color-accent;
   }
 
   &__tagline {
@@ -13,11 +14,21 @@
   }
 
   .nav__links {
-    @include flex(center, row, 2em);
-    padding: 1em 0 0 0;
+    @include flex(center, row, 1.2em);
+    padding-top: 1em;
 
     &--link {
       color: $color-light;
+      position: relative;
+
+      &:not(.btn) {
+        @extend .lnk;
+      }
+
+      img {
+        width: 3.125rem;
+        height: auto;
+      }
     }
   }
 }

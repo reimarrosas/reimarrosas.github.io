@@ -18,3 +18,57 @@
     flex-wrap: wrap;
   }
 }
+
+@mixin position($pos, $content, $left, $top, $right, $bottom) {
+  $relative-pos: (
+    'left': $left,
+    'top': $top,
+    'right': $right,
+    'bottom': $bottom,
+  );
+
+  position: $pos;
+  content: $content;
+  @each $pos, $value in $relative-pos {
+    @if ($value != na) {
+      #{$pos}: $value;
+    }
+  }
+}
+
+.btn {
+  background-color: $color-accent;
+  padding: 0.25em 0.5em;
+  position: relative;
+
+  &::after {
+    @include position(absolute, '', 0, 0, na, na);
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 150ms ease-in;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
+.lnk {
+  &::after {
+    @include position(absolute, '', 0, na, na, 0);
+    width: 100%;
+    height: 3px;
+    background-color: $color-accent;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 150ms ease-in;
+  }
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
