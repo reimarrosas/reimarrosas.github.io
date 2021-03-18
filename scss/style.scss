@@ -1,16 +1,18 @@
 @import 'defaults';
+@import 'media-queries';
 @import 'utils';
 @import 'welcome-page';
 
 :root {
-  @media screen and (min-height: 1500px) {
+  @include mq(min-height, lg) {
     font-size: 32px;
   }
 
-  @media screen and (max-width: 550px) {
+  @include mq(max-width, md-sm) {
     font-size: 14px;
   }
-  @media screen and (max-width: 395px) {
+
+  @include mq(max-width, sm) {
     font-size: 11px;
   }
 }
