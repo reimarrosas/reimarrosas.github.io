@@ -25,9 +25,16 @@
         @extend .lnk;
       }
 
-      img {
+      .img-wrapper {
         width: 3.125rem;
-        height: auto;
+        height: 3.125rem;
+        border-radius: 50%;
+        padding: 0.3em;
+        transition: background-color 250ms ease-out;
+
+        &:hover {
+          background-color: $color-accent;
+        }
       }
     }
   }

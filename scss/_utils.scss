@@ -19,7 +19,7 @@
   }
 }
 
-@mixin position($pos, $content, $left, $top, $right, $bottom) {
+@mixin position($pos, $content, $left: na, $top: na, $right: na, $bottom: na) {
   $relative-pos: (
     'left': $left,
     'top': $top,
@@ -38,7 +38,7 @@
 
 .btn {
   background-color: $color-accent;
-  padding: 0.25em 0.5em;
+  padding: 0.4em 0.5em;
   position: relative;
 
   &::after {
