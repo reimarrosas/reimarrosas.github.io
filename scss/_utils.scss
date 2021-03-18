@@ -1,0 +1,20 @@
+@mixin flex($type, $orient: row, $gap: 0, $wrap: false) {
+  display: flex;
+  flex-direction: $orient;
+  gap: $gap;
+
+  // Checking for centering
+  @if ($type == Mcenter) {
+    justify-content: center;
+  } @else if ($type == Xcenter) {
+    align-items: center;
+  } @else {
+    justify-content: center;
+    align-items: center;
+  }
+
+  //Checking for wrap
+  @if ($wrap) {
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,38 @@
+// || Imports
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:ital,wght@0,400;0,600;1,300&display=swap');
+
+// || Fonts
+$font-main: 700 3.5rem 'Merriweather', serif;
+$font-sub: 600 2.4rem 'Merriweather', serif;
+$font-hl: italic 300 1.8rem 'Montserrat', sans-serif;
+$font-content: 400 1.2rem 'Montserrat', sans-serif;
+
+// || Colors
+//$color-primary: ;
+$color-accent: #fa022a;
+$color-light: #ebebeb;
+$color-dark: #2b2b2b;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  font: $font-content;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
