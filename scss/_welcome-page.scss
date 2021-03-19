@@ -14,8 +14,12 @@
   }
 
   .nav__links {
-    @include flex(center, row, 1.2em);
+    @include flex(center, row);
     padding-top: 1em;
+
+    li + li {
+      margin-left: 1em;
+    }
 
     &--link {
       color: $color-light;

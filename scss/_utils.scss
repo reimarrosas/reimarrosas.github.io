@@ -1,7 +1,6 @@
-@mixin flex($type, $orient: row, $gap: 0, $wrap: false) {
+@mixin flex($type, $orient: row, $wrap: false) {
   display: flex;
   flex-direction: $orient;
-  gap: $gap;
 
   // Checking for centering
   @if ($type == Mcenter) {

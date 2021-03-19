@@ -68,7 +68,6 @@ li {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 0;
   justify-content: center;
   align-items: center;
 }
@@ -82,10 +81,12 @@ li {
 .hero .nav__links {
   display: flex;
   flex-direction: row;
-  gap: 1.2em;
   justify-content: center;
   align-items: center;
   padding-top: 1em;
+}
+.hero .nav__links li + li {
+  margin-left: 1em;
 }
 .hero .nav__links--link {
   color: #ebebeb;
