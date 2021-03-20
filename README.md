@@ -2,7 +2,7 @@
 
 ## About
 
-This is personal website of Reimar Rosas created using HTML5/SCSS/VanillaJS. It contains relevant information about how to contact, resume, skillset, and projects.
+This is personal website of Reimar Rosas created using HTML5/SCSS/VanillaJS. It contains projects, skillset, resume, and contact information.
 
 ## URL
 
